@@ -1,0 +1,27 @@
+{
+  "name": "webprogramming",
+  "version": "1.0.0",
+  "description": "A testing area for html, css, javaScript etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomdozz/WebProgramming.git"
+  },
+  "keywords": [
+    "testing",
+    "learning"
+  ],
+  "author": "Tom Andersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomdozz/WebProgramming/issues"
+  },
+  "homepage": "https://github.com/Tomdozz/WebProgramming#readme",
+  "dependencies": {
+    "bootstrap": "file:bootstrap",
+    "jquery": "^3.3.1"
+  }
+}
