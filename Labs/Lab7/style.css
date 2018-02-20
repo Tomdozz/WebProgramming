@@ -1,0 +1,29 @@
+#wrapper{
+    width: 960px;
+    margin: 0 auto 0 auto;
+}
+.row{
+    clear: both;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.columns-4,
+.columns-6,
+.columns-2  {
+    float:left;
+    margin: 10px;
+    padding: 10px;
+    background: #eeee;
+}
+.columns-4{
+    width: 280px;
+}
+.columns-6{
+    width: 440px;
+}
+.columns-2{
+    width: 140px;
+}
