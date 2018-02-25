@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-$db = mysqli_connect("http://ddwap.mah.se/mysqlbrowser/conn.php", "AF8120", "Wttadey12", "AF8120");
+$db = mysqli_connect("localhost", "AF8120", "Wttadey12");
 
 $return = new ArrayObject();
 
