@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-$db = mysqli_connect("localhost", "AF8120", "Wttadey12");
+$db = mysqli_connect("localhost", "AF8120", "Wttadey12", "AF8120");
 
 $return = new ArrayObject();
 

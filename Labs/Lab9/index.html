@@ -15,16 +15,25 @@
 <!--https://ddwap.mah.se/AF8120/index.html-->
 
 <body>
-    <form action="server.php" enctype="multipart/form-data" method="post" id="myForm">
-        <select name="type">
+    <form action="http://ddwap.mah.se/AF8120/server.php" enctype="multipart/form-data" method="post" id="myForm">
+        <select name="type" onchange="mediaType(this.value)">
             <option value="">Välj typ här</option>
-            <option value="photo">Foto</option>
-            <option value="video">Video</option>
-            <option value="audio">Ljud</option>
+            <option value="image/*">Foto</option>
+            <option value="video/*">Video</option>
+            <option value="audio/*">Ljud</option>
         </select>
-        <input type="file" name="media" class="btn">
+        <input type="file" name="media" accept="image/*" class="btn" id="medias">
+        Title: <input type="text" name="title">
         <input type="submit" value="Spara media" class="btn">
     </form>
+    <select name="show" onchange="chooseDisplay(this.value)">
+        <option value="audio">Audio</option>
+        <option value="photo">Images</option>
+        <option value="video">Video</option>
+    </select>
+    <div id="images">
+        
+    </div>
     <script src="main.js"></script>
     <script src="../../node_modules/bootstrap//dist/js/bootstrap.min.js"></script>
 </body>
