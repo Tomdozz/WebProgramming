@@ -4,13 +4,45 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inlämning 2</title>
+    <title>Filmer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .movie button {
+            text-align: center;
+            margin: 1em;
+        }
+
+        .movie {
+            background-color: rgb(196, 196, 196);
+        }
+
+        #results-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .main {
+            padding: 0;
+        }
+
+        #search {
+            margin: 1em;
+        }
+
+        #search button {
+            margin-top: 1vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,13 +53,10 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <!-- Brand -->
-            <a class="navbar-brand" href="#">Inlämning 2</a>
-            <!-- Toggler/collapsibe Button -->
+            <a class="navbar-brand" href="index.html">Inlämning 2</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -40,17 +69,22 @@
             </div>
         </nav>
         <div class="row content">
-            <div class="col-ld-6 col-md-6 col-sd-12 col-xs-12">
-                <h2>Väder</h1>
-                <div>
-                    <h5 id="temp">Tempratur: </h5>
-                    <h5 id="state">Väderläge: </h5>
-                    <img id="icon" src="">
-                    <!-- <h5>Tempratur</h5> -->
+            <div class="col-ld-12 col-md-12 col-sd-12 col-xs-12">
+                <div class="form-group" id="search">
+                    <label for="usr">Sök film:</label>
+                    <input type="text" class="form-control" name="movieSearch">
+                    <button type="button" class="btn btn-default" id="searchBtn">Sök</button>
+                    <hr>
+                    <h3>Sökresultat</h3>
+                    <ul id="results-list" class="results-list">
+
+                    </ul>
                 </div>
+
             </div>
         </div>
     </div>
+    <script src="movieS.js"></script>
 </body>
 
 </html>
